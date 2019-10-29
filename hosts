@@ -1,0 +1,12 @@
+[linux]
+linux1 ansible_host=34.253.191.8 ansible_user=ubuntu ansible_ssh_private_key_file=/home/palach/.ssh/testaws.pem
+
+[Windows]
+Windows1 ansible_host=54.171.159.180
+
+[Windows:vars]
+ansible_user=admin1
+ansible_password=Ghbdtn78Ghbdtn78
+ansible_port=5986
+ansible_connection=winrm
+ansible_winrm_server_cert_validation=ignore
