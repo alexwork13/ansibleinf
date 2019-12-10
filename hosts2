@@ -1,0 +1,13 @@
+[PROD]
+linux1 ansible_host=ec2-52-49-135-193.eu-west-1.compute.amazonaws.com
+
+[STAGE]
+linux2 ansible_host=ec2-52-49-135-193.eu-west-1.compute.amazonaws.com
+
+[ALL_SERVERS:children]
+PROD
+STAGE
+
+[ALL_SERVERS:vars]
+ansible_user=ubuntu
+ansible_ssh_private_key_file=/home/ubuntu/.ssh/awstest.pem
