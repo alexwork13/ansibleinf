@@ -1,0 +1,11 @@
+---
+- name: Install default Apache Web Server
+  hosts: Linux
+  become: yes
+
+  tasks:
+  - name: Apt install Apache
+    apt: name=apache2 update_cache=yes state=latest
+
+  - name: Start and Enable Apache
+    service: name=apache2 state=started enabled=yes 
