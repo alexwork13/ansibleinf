@@ -1,5 +1,5 @@
 [Linux]
-linux1 ansible_host=54.171.189.215 
+linux1 ansible_host=ec2-52-19-217-132.eu-west-1.compute.amazonaws.com 
 
 
 [Windows]
